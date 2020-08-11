@@ -34,7 +34,7 @@ class ImgCluster:
         features = cd.describe(query)
         # perform the search
         searcher = Searcher(path_of_project_dir + "/index.csv")
-        results = searcher.search(features, limit=N)
+        results = searcher.search(features, N)
         # display the query
         # loop over the results
         final = []

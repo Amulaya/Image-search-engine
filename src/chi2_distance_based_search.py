@@ -7,7 +7,7 @@ class Searcher:
         # store our index path
         self.indexPath = indexPath
 
-    def search(self, queryFeatures, limit=N):
+    def search(self, queryFeatures, limit):
         # initialize our dictionary of results
         results = {}
 

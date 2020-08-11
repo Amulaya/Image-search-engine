@@ -12,7 +12,7 @@ def main():
     print("Enter the image number whose results you want to see")
     image_no_for_query = input()
     path_of_query = path_of_project_dir + "/dataset/" + image_no_for_query + ".jpg"
-    print("Enter the no of simliar images you want to see")
+    print("Enter the no of similar images you want to see")
     N = int(input())
     Utils.clustring_of_images(path_of_project_dir)
     Utils.get_clustred(path_of_project_dir)
