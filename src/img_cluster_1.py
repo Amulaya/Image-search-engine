@@ -34,7 +34,7 @@ class Searcher:
         # more relevant images are at the front of the list)
         results = sorted([(v, k) for (k, v) in results.items()])
         # return our (limited) results
-        return results[:limit]
+        return results[:int(limit)]
 
     def chi2_distance(self, histA, histB, eps=1e-10):
         # compute the chi-squared distance
